@@ -135,7 +135,7 @@ BMI = mass / height^2
 
 GOOD LUCK 😀
 */
-var markmass, johnmass, markheight , johnheight, markBMI, jonhBMI;
+/*var markmass, johnmass, markheight , johnheight, markBMI, jonhBMI;
 
 markmass = 78; //kg
 markheight = 1.69;//meter
@@ -153,7 +153,205 @@ console.log('Jhon BMI: '+jonhBMI);
 
 var Mark_BMI_then_Jhon = markBMI > jonhBMI;
 console.log('Mark has a higher BMI than John.:: '+Mark_BMI_then_Jhon);
-
+*/
 /*************************************************************
  * IF-ESLE Statement  
 */
+/*
+var firstname = 'john';
+var civilStatus = 'Single';
+
+if (civilStatus === 'married'){
+    console.log(firstname + 'is married ');
+
+}
+else {
+    console.log(firstname + ' will hopefully marry soon');
+
+}
+var ismarried = true;
+if (ismarried){
+    console.log(firstname + ' is married ');
+
+}
+else {
+    console.log(firstname + ' will hopefully marry soon');
+
+}
+
+markmass = 78; //kg
+markheight = 1.69;//meter
+
+johnmass =92;
+johnheight = 1.95;
+
+// markBMI = markmass / markheight^2;
+markBMI = markmass / (markheight * markheight);
+console.log('Mark BMI: '+markBMI);
+jonhBMI = johnmass/ (johnheight * johnheight);
+
+// jonhBMI = johnmass/ johnheight^2;
+console.log('Jhon BMI: '+jonhBMI);
+
+if (markBMI < jonhBMI){
+    console.log('Mark has a higher BMI than John.');
+}
+else{
+    console.log('john\' BMI is heiher than marks ')
+}
+*************************************************************/
+/******************************************
+ * Boolean Logic
+ */
+/*
+var firstname = prompt('what\'s the name.' );
+var age = prompt('what is the Age of '+firstname+':');
+
+if (age<13){
+    //console.log(firstname + ' is a boy.');
+    alert(firstname + ' is a boy.');
+}
+else if(age >= 13 && age<20){//between 13 and 20 === age >=13 and age<20 
+    //console.log(firstname + ' is a teenager.');
+    alert(firstname + ' is a teenager.');
+}
+else if (age >=20 && age <30){
+    //console.log(firstname + ' is a young man.');
+    alert(firstname + ' is a young man.');
+}
+else{
+    //console.log(firstname + ' is a Man.');
+    alert(firstname + ' is a Man.');
+}
+*/
+/***************************************
+ * The Ternary Operator and Switch Statements
+ */
+/*
+var firstname= prompt('Whats the Name: ');
+var age = prompt('What\'s the age:');
+//Ternary Operator 
+age >= 18 ? alert(firstname +' Drinks beer.')
+: alert(firstname+ ' Drinks juice. ');
+
+// var Drinks = age>= 18 ? 'Beer' : 'Juice';
+// console.log(Drinks);
+/// Switch Statements
+var job = prompt('What is Job: ');
+switch(job) {//IN '()' we put what we want to test
+    case 'teacher'://for any of 'teacher' or 'instrtuctor'alet will same
+    case 'instructor':
+        alert(firstname+' teaches kids how to code.');
+        break;
+    case('designer'):
+        alert(firstname+' is a designer.');
+        break;
+    case('driver'):
+        alert(firstname+' is driver');
+        break;
+    default:
+        alert(firstname+' do something else.');
+        break;
+}
+*/
+/*
+var firstname = prompt('what\'s the name.' );
+var age = prompt('what is the Age of '+firstname+':');
+
+switch(true){
+    case(age<13):
+        alert(firstname + ' is a boy.');
+        break;
+    case(age >= 13 && age < 20):
+        alert(firstname + ' is a teenager.');
+        break;
+    case(age >=20 && age<30):
+         alert(firstname + ' is a young man.');
+         break;
+    default:
+        alert(firstname + ' is a Man.');
+        break;
+
+}*/
+/*
+if (age<13){
+    //console.log(firstname + ' is a boy.');
+    alert(firstname + ' is a boy.');
+}
+else if(age >= 13 && age<20){//between 13 and 20 === age >=13 and age<20 
+    //console.log(firstname + ' is a teenager.');
+    alert(firstname + ' is a teenager.');
+}
+else if (age >=20 && age <30){
+    //console.log(firstname + ' is a young man.');
+    alert(firstname + ' is a young man.');
+}
+else{
+    //console.log(firstname + ' is a Man.');
+    alert(firstname + ' is a Man.');
+}*/
+
+/*******************************************
+ * Truthy and Falsy values and equality operators
+ */
+/*
+ var height;
+
+ height =23;
+ if (height || height === 0){//"===" for strick condition
+     console.log('variable is defined: '+height);
+ }
+ else{
+    console.log('variable is NOT defined.');
+ }
+
+ //euqality operators
+ if (height == '23'){//convert the 23 into number to compare
+    console.log('the == operator does type coerction!');
+ }
+ */
+/*****************************
+* CODING CHALLENGE 2
+*/
+
+/*
+John and Mike both play basketball in different teams. 
+In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
+
+1. Calculate the average score for each team
+
+2. Decide which teams wins in average (highest average score), and print the winner to the console.
+   Also include the average score in the output.
+
+3. Then change the scores to show different winners.
+   Don't forget to take into account there might be a draw (the same average score)
+
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points.
+ Like before, log the average winner to the console.
+  HINT: you will need the && operator to take the decision.
+   If you can't solve this one, just watch the solution, it's no problem :)
+5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
+
+GOOD LUCK 😀
+*/
+/*****************************
+* CODING CHALLENGE 2
+*/
+var john_avrg_points, mark_avrg_points, mary_avrg_points;
+john_avrg_points= (116+94+123)/3;
+mark_avrg_points= (116+94+123)/3;
+mary_avrg_points= (116+94+123)/3;
+
+
+if (john_avrg_points > mark_avrg_points && john_avrg_points > mary_avrg_points){
+    console.log('John Team Wins in Average Points: '+john_avrg_points);
+}
+else if(mark_avrg_points > john_avrg_points && mark_avrg_points > mary_avrg_points){
+    console.log('Mark Team Wins in Average Points: '+mark_avrg_points);
+}
+else if(mary_avrg_points > john_avrg_points && mary_avrg_points > mark_avrg_points){
+    console.log('Mary Team Wins in Average Points: '+mary_avrg_points);
+}
+else{
+    console.log('Both Team has the Same Average Points. '+'Mark Team Average Points: '+mark_avrg_points+' John Team Average Points: '+john_avrg_points+' Mary Team Average Points: '+mary_avrg_points);
+}
