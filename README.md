@@ -7,5 +7,5 @@ Coding Challenge-1 Complete
 Date: 6/01/2020
 Coding Challenge-1 Complete 
 ---------------------------------
-Next Fuction
+Next Function
 ---------------------------------
