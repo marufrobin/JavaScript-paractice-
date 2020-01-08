@@ -337,6 +337,7 @@ GOOD LUCK 😀
 /*****************************
 * CODING CHALLENGE 2
 */
+/*
 var john_avrg_points, mark_avrg_points, mary_avrg_points;
 john_avrg_points= (116+94+123)/3;
 mark_avrg_points= (116+94+123)/3;
@@ -354,4 +355,67 @@ else if(mary_avrg_points > john_avrg_points && mary_avrg_points > mark_avrg_poin
 }
 else{
     console.log('Both Team has the Same Average Points. '+'Mark Team Average Points: '+mark_avrg_points+' John Team Average Points: '+john_avrg_points+' Mary Team Average Points: '+mary_avrg_points);
+}
+************************************************************/
+/***********************************************************
+ * Function
+ */
+/*
+function calculateAge(birthYear){
+    return 2020- birthYear;
+
+}
+// var Robin = calculateAge(prompt("what year was Robin Born: "));
+// alert('Robin Age: '+ Robin);
+
+// var Jhon = calculateAge(1997);
+// var mike = calculateAge(1995);
+// var jane = calculateAge(1998);
+// alert('Jhon Age: '+Jhon);
+// alert('Mike Age: '+mike);
+// alert('Jane Age: '+jane);
+
+function yearUntillretire(Year, firstname){
+    var age = calculateAge (Year);//calling calculateAge function within this function
+
+    alert(firstname+' Age: '+age)
+    var retire = 65 - age;
+    var wasRetire = age - 65; 
+    if(retire > 0){
+        alert(firstname+ ' Retire in '+retire+ ' years.');
+    }
+    else{
+        alert(firstname+' was retire in: '+ wasRetire+' years ago.');
+    }
+
+
+ }
+// yearUntillretire(1995, 'Robin');
+// yearUntillretire(1996, 'Maruf');
+// yearUntillretire(1997, 'Ahmed');
+// yearUntillretire(1998, 'Marlin');
+// yearUntillretire(1971, 'Mozibur');
+yearUntillretire(prompt('Birth Year: '), prompt('Firstname: '));
+*********************************************************/
+/*******************************************************
+ * Function Statments and Expression
+ */
+//Function declaration
+// function whatdoyoudo(job, firstname){
+
+// }
+
+//Function expression
+var whatdoyoudo=  function(job, firstname){
+    switch(job){
+        case 'teacher':
+            return firstname+' how to code.';
+        case 'driver':
+            return firstname+' how to drive.';
+        case 'designer':
+            return firstname+' design beautifull website.';
+        default:
+            return firstname+ ' jobless.';
+        
+    }
 }
