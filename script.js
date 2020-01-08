@@ -409,13 +409,16 @@ yearUntillretire(prompt('Birth Year: '), prompt('Firstname: '));
 var whatdoyoudo=  function(job, firstname){
     switch(job){
         case 'teacher':
-            return firstname+' how to code.';
+            return firstname+' teaches how to code.';
         case 'driver':
             return firstname+' how to drive.';
         case 'designer':
             return firstname+' design beautifull website.';
         default:
-            return firstname+ ' jobless.';
+            return firstname+ ' Do something else.';
         
     }
 }
+ alert(whatdoyoudo('teacher', 'Robin'));
+ alert(whatdoyoudo('designer', 'Mark'));
+ alert(whatdoyoudo('', 'Marlin'));
