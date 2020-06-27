@@ -1,424 +1,476 @@
-// console.log('Hello world in consol!!!!!!!!!');
+/***************************************
+ * Variable and Data types
+ */
 
-/*********************************** 
-Variables and Data types 
-*************************************/
-/*var firstname = 'Maruf';
-console.log(firstname);
-var lastname = 'Robin';
-var age = 22;
-console.log(lastname);
-console.log(age);
+/*
+console.log("Hello World! from the script.");
+// String variable
+var firstName ='Maruf';
+console.log(firstName);
 
-var fullage = true;
-console.log(fullage);
+var lastName = 'Robin';
+console.log(lastName);
 
-var fullagef = false;
-console.log(fullagef);
-var job;
+// Number variable
+var age = '23';
+console.log(firstName+' '+lastName+' '+' is '+age+' Years old.')
+
+//boolean 
+var isAlive = true;
+console.log('Is '+firstName+' '+lastName+' alive: '+isAlive);
+
+var job =null ;
 console.log(job);
-
-job = 'teacher';
-console.log(job);
-var nullvalue;
-nullvalue = null;
-console.log(nullvalue);
-// use "_ "for use number in variable 
-var _3year = 3;
-console.log(_3year);
-***********************/
-
-/****************************** 
-//type coercion
-
-var lastname = 'Robin';
-var age = 22;
-console.log(lastname +' '+ age );
-
-var job , ismarried;
-job = 'teacher';
-ismarried = false;
-console.log(lastname +' '+ age +' year old '+job+' Is he married? '+ismarried );
-
-// Variavle mutation 
-age = 'Twenty eight';
- job = 'Driver ';
- alert(lastname +' '+ age +' year old '+job+' Is he married? '+ismarried );
-var firstname=  prompt('What is his First Name ?');
-console.log(firstname +' '+ age +' year old '+job+' Is he married? '+ismarried );
 */
-/****************************** 
- Basic operators
+
+/***************************************
+ * Variable mutation and tyope coercion
+ */
+/*
+var firstName ='Maruf';
+
+var lastName = 'Robin';
+
+var age = '23';
+// type coercion
+console.log(firstName+' '+lastName+' '+' is '+age+' Years old.')
+
+var job, isMarrid;
+job = 'Engineer';
+isMarrid = false;
+console.log(firstName+' '+lastName+' is a'+age+' years old '+job+'. Is he Married? '+isMarrid);
+
+// Varivable mutation
+age = 'twenty three';
+job = 'Drive';
+
+alert(firstName+' '+lastName+' is a'+age+' years old '+job+'. Is he Married? '+isMarrid);
+
+lastName = prompt('what is your last name: ');
+alert(firstName+' '+lastName);
 */
-/*var now, yearjohn,yearmark, agejohn, agemark;
- now= 2018;
-agejohn= 28;
-agemark = 33;
 
- yearjohn = now -agejohn;
+/***************************************
+ * Basic operators
+ */
+/*
+ //Math
+var biggerNumber, firstNumber, lastNumber;
 
- yearmark = now -agemark;
-//Math operators
- console.log(yearjohn);
-console.log(yearmark);
+firstNumber = 2020;
+lastNumber = 20;
 
-console.log(now + 2);
-console.log(now - 2);
-console.log(now * 2);
-console.log(now / 2);
-// Logical Operators
-var johnOlder, markOlder ;
+console.log(firstNumber + lastNumber);
+console.log(firstNumber - lastNumber);
+console.log(firstNumber / lastNumber);
+console.log(firstNumber * lastNumber);
 
-johnOlder = agejohn > agemark;
-console.log('John is older than Mark: '+johnOlder);
-markOlder = agemark > agejohn;
-console.log('Mark is older than john: '+markOlder);
+//Logical Operators
+biggerNumber = firstNumber > lastNumber;
+console.log(biggerNumber);
 
-//typeof operator 
-console.log(typeof johnOlder); //to find out the type of the operator 
-console.log(typeof agejohn);
-console.log(typeof 'Mark is older than john');
+//typeof operator
+console.log(typeof biggerNumber);
+console.log(typeof firsNumber);
+console.log(typeof lastNumber);
 var x;
 console.log(typeof x);
-*****************************/
+*/
 
-
-/****************************
- Operator proecedance
+/***************************************
+ * Operator Precedence
  */
-
- /*
- var now = 2020;
- var yearjohn= 1989;
- var fullage = 18;
- //Multiple operators 
- var isFullage = now - yearjohn>= fullage;
- console.log(isFullage);
-//grouping 
- var agejohn, agemark, average;
- agejohn = now - yearjohn;
- agemark = 35;
- average = (agejohn + agemark) / 2;
- console.log(average);
-// Multiple assignments
-var x, y;
-x = y = (3+5)*4-6; //8 * 4 -6// 32 - 6// 26 //y= 26
-
-// normal works left to right like= 2+4+5
-// In Assignments works like left to right like....
-// here 1st we will get Y value 26 then.... 
-// X will get the value from Y that is 26
-
-console.log('X=',x ,'Y=', y);
-// More operators
-//  x= x+2;
-x += 2;
- console.log('New X=',x); 
- //increment 
- x++;
- console.log('Increment X=',x);
-*/
-/**************************************
- * Coding Chalenge - 01
- */
- /*
-Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
-
-BMI = mass / height^2
-(mass in KG and height in meter ).
-
-
-1. Store Mark's and John's mass and height in variables
-2. Calculate both their BMIs
-3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
-4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
-
-GOOD LUCK 😀
-*/
-/*var markmass, johnmass, markheight , johnheight, markBMI, jonhBMI;
-
-markmass = 78; //kg
-markheight = 1.69;//meter
-
-johnmass =92;
-johnheight = 1.95;
-
-// markBMI = markmass / markheight^2;
-markBMI = markmass / (markheight * markheight);
-console.log('Mark BMI: '+markBMI);
-jonhBMI = johnmass/ (johnheight * johnheight);
-
-// jonhBMI = johnmass/ johnheight^2;
-console.log('Jhon BMI: '+jonhBMI);
-
-var Mark_BMI_then_Jhon = markBMI > jonhBMI;
-console.log('Mark has a higher BMI than John.:: '+Mark_BMI_then_Jhon);
-*/
-/*************************************************************
- * IF-ESLE Statement  
-*/
+//Multiple Operators
 /*
-var firstname = 'john';
-var civilStatus = 'Single';
+var now= 2020;
+var yearJhon= 1989;
+var adultAge = 18;
 
-if (civilStatus === 'married'){
-    console.log(firstname + 'is married ');
+var isAdultAge = now - yearJhon >= adultAge;
+console.log(isAdultAge);
+//Grouping
+var ageJhon = now - yearJhon;
+var ageMark = 35;
+var avrage = (ageJhon + ageMark) / 2;
+console.log(avrage);
 
-}
-else {
-    console.log(firstname + ' will hopefully marry soon');
+//Multiple Assignment 
+var x ,y;
+//Assignment operators work right to left 
+//means first y=26 and then x= 26 (beacuse x=y=26)
+x = y = (3 + 5) * 4 - 6; //8 * 4 - 6 //32 - 6 = 26
+console.log(x , y);
 
-}
-var ismarried = true;
-if (ismarried){
-    console.log(firstname + ' is married ');
+x = x * 2;
+x *= 2;
+console.log(x);
 
-}
-else {
-    console.log(firstname + ' will hopefully marry soon');
+x = x + 1;
+x += 1;
+x++;
+x--;
+*/
+/***************************************
+ * challenge -- 1
+ */
 
-}
+/*
+var massMark, massjhon, markHight, jhonHight;
 
-markmass = 78; //kg
-markheight = 1.69;//meter
+massMark = prompt('Mark Mass(kg): ');
+markHight = prompt('Mark height(meters):');
 
-johnmass =92;
-johnheight = 1.95;
+massjhon = prompt('Jhon Mass(kg): ');
+jhonHight = prompt('Jhon Height(meters): ');
 
-// markBMI = markmass / markheight^2;
-markBMI = markmass / (markheight * markheight);
-console.log('Mark BMI: '+markBMI);
-jonhBMI = johnmass/ (johnheight * johnheight);
+var jhonBMI = massjhon / (jhonHight * jhonHight); 
+console.log('Jhon BMI: '+jhonBMI);
 
-// jonhBMI = johnmass/ johnheight^2;
-console.log('Jhon BMI: '+jonhBMI);
+var markBMI = massMark / (markHight * markHight);
+console.log('Mark BMI: '+ markBMI);
 
-if (markBMI < jonhBMI){
-    console.log('Mark has a higher BMI than John.');
-}
-else{
-    console.log('john\' BMI is heiher than marks ')
-}
-*************************************************************/
-/******************************************
- * Boolean Logic
+console.log("Is Mark's BMI higher than Jhon's BMI? ");
+console.log(markBMI > jhonBMI);
+*/
+
+/***************************************
+ * if else Operator
  */
 /*
-var firstname = prompt('what\'s the name.' );
-var age = prompt('what is the Age of '+firstname+':');
+var massMark, massjhon, markHight, jhonHight;
 
-if (age<13){
-    //console.log(firstname + ' is a boy.');
-    alert(firstname + ' is a boy.');
-}
-else if(age >= 13 && age<20){//between 13 and 20 === age >=13 and age<20 
-    //console.log(firstname + ' is a teenager.');
-    alert(firstname + ' is a teenager.');
-}
-else if (age >=20 && age <30){
-    //console.log(firstname + ' is a young man.');
-    alert(firstname + ' is a young man.');
-}
-else{
-    //console.log(firstname + ' is a Man.');
-    alert(firstname + ' is a Man.');
+massMark = prompt('Mark Mass(kg): ');
+markHight = prompt('Mark height(meters):');
+
+massjhon = prompt('Jhon Mass(kg): ');
+jhonHight = prompt('Jhon Height(meters): ');
+
+var jhonBMI = massjhon / (jhonHight * jhonHight); 
+console.log('Jhon BMI: '+jhonBMI);
+
+var markBMI = massMark / (markHight * markHight);
+console.log('Mark BMI: '+ markBMI);
+
+if (markBMI > jhonBMI) {
+    console.log("Mark's BMI is higher than Jhon's");
+} else if(jhonBMI > markBMI) {
+    console.log("Jhon's BMI is higher than Mark's");
+}else{
+    console.log("Mark's BMI and Jhon's BMI are Equal.");
 }
 */
 /***************************************
- * The Ternary Operator and Switch Statements
+ * Ternary Operator and Switch Statements
+ */
+
+//  var firstName = 'Robin';
+//  var age = 15;
+
+//  //Boolean ? if part  : else part
+//  age >= 18 ? console.log(firstName+ ' Drinks beer.'): console.log(firstName+ 'Drinks Juice.');
+
+/***************************************
+ * Coding Challenge -2
  */
 /*
-var firstname= prompt('Whats the Name: ');
-var age = prompt('What\'s the age:');
-//Ternary Operator 
-age >= 18 ? alert(firstname +' Drinks beer.')
-: alert(firstname+ ' Drinks juice. ');
+//Jhon Team Score
+var jhonTeamAverageScore ,jhonMatch1, jhonMatch2, jhonMatch3;
 
-// var Drinks = age>= 18 ? 'Beer' : 'Juice';
-// console.log(Drinks);
-/// Switch Statements
-var job = prompt('What is Job: ');
-switch(job) {//IN '()' we put what we want to test
-    case 'teacher'://for any of 'teacher' or 'instrtuctor'alet will same
-    case 'instructor':
-        alert(firstname+' teaches kids how to code.');
-        break;
-    case('designer'):
-        alert(firstname+' is a designer.');
-        break;
-    case('driver'):
-        alert(firstname+' is driver');
-        break;
-    default:
-        alert(firstname+' do something else.');
-        break;
+jhonMatch1 = parseInt(prompt('Match-1 for Jhon Team:'));
+jhonMatch2 = parseInt(prompt('Match-2 for Jhon Team:'));
+jhonMatch3 = parseInt(prompt('Match-3 for Jhon Team:'));
+
+jhonTeamAverageScore = (jhonMatch1 + jhonMatch2 + jhonMatch3) / 3;
+
+
+//Mike Team Score
+var mikeTeamAverageScore ,mikeMatch1, mikeMatch2, mikeMatch3;
+
+mikeMatch1 = parseInt(prompt('Match-1 for Mike Team:'));
+mikeMatch2 = parseInt(prompt('Match-2 for Mike Team:'));
+mikeMatch3 = parseInt(prompt('Match-3 for Mike Team:'));
+
+mikeTeamAverageScore = (mikeMatch1 + mikeMatch2 + mikeMatch3) / 3;
+
+//Mary Team Score
+var maryTeamAverageScore ,maryMatch1, maryMatch2, maryMatch3;
+
+maryMatch1 = parseInt(prompt('Match-1 for Mary Team:'));
+maryMatch2 = parseInt(prompt('Match-2 for Mary Team:'));
+maryMatch3 = parseInt(prompt('Match-3 for Mary Team:'));
+
+maryTeamAverageScore = (maryMatch1 + maryMatch2 + maryMatch3) / 3;
+
+console.log("Jhon's Team Average Score: "+jhonTeamAverageScore);
+
+console.log("Mike's Team Average Score: "+mikeTeamAverageScore);
+
+console.log("Mary's Team Average Score: "+maryTeamAverageScore);
+
+if (jhonTeamAverageScore > mikeTeamAverageScore && jhonTeamAverageScore > maryTeamAverageScore) {
+    console.log("Jhon's Team Wins with Average Score: "+jhonTeamAverageScore);
+} else if(mikeTeamAverageScore > jhonTeamAverageScore && mikeTeamAverageScore > maryTeamAverageScore){
+    console.log("Mike's Team Wins with Average Score: "+mikeTeamAverageScore);
+}else if(maryTeamAverageScore > jhonTeamAverageScore && maryTeamAverageScore > mikeTeamAverageScore){
+    console.log("Mary's Team Wins with Average Score: "+maryTeamAverageScore);    
+}else{
+    console.log("Jhon , Mike , Mary's Team Score Same.");
 }
 */
-/*
-var firstname = prompt('what\'s the name.' );
-var age = prompt('what is the Age of '+firstname+':');
-
-switch(true){
-    case(age<13):
-        alert(firstname + ' is a boy.');
-        break;
-    case(age >= 13 && age < 20):
-        alert(firstname + ' is a teenager.');
-        break;
-    case(age >=20 && age<30):
-         alert(firstname + ' is a young man.');
-         break;
-    default:
-        alert(firstname + ' is a Man.');
-        break;
-
-}*/
-/*
-if (age<13){
-    //console.log(firstname + ' is a boy.');
-    alert(firstname + ' is a boy.');
-}
-else if(age >= 13 && age<20){//between 13 and 20 === age >=13 and age<20 
-    //console.log(firstname + ' is a teenager.');
-    alert(firstname + ' is a teenager.');
-}
-else if (age >=20 && age <30){
-    //console.log(firstname + ' is a young man.');
-    alert(firstname + ' is a young man.');
-}
-else{
-    //console.log(firstname + ' is a Man.');
-    alert(firstname + ' is a Man.');
-}*/
-
-/*******************************************
- * Truthy and Falsy values and equality operators
+/***************************************
+ * Functions
  */
 /*
- var height;
-
- height =23;
- if (height || height === 0){//"===" for strick condition
-     console.log('variable is defined: '+height);
- }
- else{
-    console.log('variable is NOT defined.');
- }
-
- //euqality operators
- if (height == '23'){//convert the 23 into number to compare
-    console.log('the == operator does type coerction!');
- }
- */
-/*****************************
-* CODING CHALLENGE 2
-*/
-
-/*
-John and Mike both play basketball in different teams. 
-In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
-
-1. Calculate the average score for each team
-
-2. Decide which teams wins in average (highest average score), and print the winner to the console.
-   Also include the average score in the output.
-
-3. Then change the scores to show different winners.
-   Don't forget to take into account there might be a draw (the same average score)
-
-4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points.
- Like before, log the average winner to the console.
-  HINT: you will need the && operator to take the decision.
-   If you can't solve this one, just watch the solution, it's no problem :)
-5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
-
-GOOD LUCK 😀
-*/
-/*****************************
-* CODING CHALLENGE 2
-*/
-/*
-var john_avrg_points, mark_avrg_points, mary_avrg_points;
-john_avrg_points= (116+94+123)/3;
-mark_avrg_points= (116+94+123)/3;
-mary_avrg_points= (116+94+123)/3;
-
-
-if (john_avrg_points > mark_avrg_points && john_avrg_points > mary_avrg_points){
-    console.log('John Team Wins in Average Points: '+john_avrg_points);
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
 }
-else if(mark_avrg_points > john_avrg_points && mark_avrg_points > mary_avrg_points){
-    console.log('Mark Team Wins in Average Points: '+mark_avrg_points);
-}
-else if(mary_avrg_points > john_avrg_points && mary_avrg_points > mark_avrg_points){
-    console.log('Mary Team Wins in Average Points: '+mary_avrg_points);
-}
-else{
-    console.log('Both Team has the Same Average Points. '+'Mark Team Average Points: '+mark_avrg_points+' John Team Average Points: '+john_avrg_points+' Mary Team Average Points: '+mary_avrg_points);
-}
-************************************************************/
-/***********************************************************
- * Function
- */
-/*
-function calculateAge(birthYear){
-    return 2020- birthYear;
+// var ageJhon = calculateAge(prompt('Birth Year.'));
+// console.log(ageJhon);
 
-}
-// var Robin = calculateAge(prompt("what year was Robin Born: "));
-// alert('Robin Age: '+ Robin);
+function yearUntillRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
 
-// var Jhon = calculateAge(1997);
-// var mike = calculateAge(1995);
-// var jane = calculateAge(1998);
-// alert('Jhon Age: '+Jhon);
-// alert('Mike Age: '+mike);
-// alert('Jane Age: '+jane);
-
-function yearUntillretire(Year, firstname){
-    var age = calculateAge (Year);//calling calculateAge function within this function
-
-    alert(firstname+' Age: '+age)
-    var retire = 65 - age;
-    var wasRetire = age - 65; 
-    if(retire > 0){
-        alert(firstname+ ' Retire in '+retire+ ' years.');
+    if (retirement > 0) {
+      console.log(firstName+ ' retires in '+retirement+' years.');
+    } else {
+        console.log(firstName+' already retired.');
     }
-    else{
-        alert(firstname+' was retire in: '+ wasRetire+' years ago.');
-    }
+}
 
+yearUntillRetirement(prompt('Birth Year: '), prompt('First Name: '));
+yearUntillRetirement(prompt('Birth Year: '), prompt('First Name: '));
+yearUntillRetirement(prompt('Birth Year: '), prompt('First Name: '));
+*/
 
- }
-// yearUntillretire(1995, 'Robin');
-// yearUntillretire(1996, 'Maruf');
-// yearUntillretire(1997, 'Ahmed');
-// yearUntillretire(1998, 'Marlin');
-// yearUntillretire(1971, 'Mozibur');
-yearUntillretire(prompt('Birth Year: '), prompt('Firstname: '));
-*********************************************************/
-/*******************************************************
- * Function Statments and Expression
+/***************************************
+ * Functions Statements and Expressions
  */
-//Function declaration
-// function whatdoyoudo(job, firstname){
+/**
+//Function decalaretion
 
-// }
+function whatYouDO(job, firstName) {
+    return firstName+ 'profession is '+job;
+}
 
 //Function expression
-var whatdoyoudo=  function(job, firstname){
-    switch(job){
-        case 'teacher':
-            return firstname+' teaches how to code.';
-        case 'driver':
-            return firstname+' how to drive.';
-        case 'designer':
-            return firstname+' design beautifull website.';
-        default:
-            return firstname+ ' Do something else.';
-        
+var whatYouDo = function (job, firstName) {
+    return firstName + ' profession is ' + job;
+}
+
+console.log(whatYouDo('Developer', 'Maruf'));
+*/
+/***************************************
+ * Array
+ */
+/*
+//intitalize new array
+var nnam = ['Robin', 'Maruf', 'Ahmed'];
+console.log(nnam);
+console.log(nnam.length);
+//Mutate array data
+nnam[0] = 'Maruf';
+nnam[1] = 'Ahmed';
+nnam[2] = 'Robin';
+nnam[nnam.length] = 'Bapare';
+console.log(nnam);
+//Different data type 
+var jhon = ['Maruf', 'Robin', 1997, 'Developer', false]
+jhon.push('Blue');
+jhon.unshift('Mr.')
+console.log(jhon);
+jhon.pop();
+console.log(jhon);
+jhon.shift();
+console.log(jhon);
+console.log(jhon.indexOf(1997));\
+*/
+/***************************************
+ * Coding Challenge - 3
+ */
+/*
+function calculateTip(bill) {
+    if (bill <= 50) {
+        return tip = bill * 0.2;
+    } else if(bill >50 && bill < 200){
+        return tip = bill * 0.15;
+    }else{
+        return tip = bill * 0.1;
     }
 }
- alert(whatdoyoudo('teacher', 'Robin'));
- alert(whatdoyoudo('designer', 'Mark'));
- alert(whatdoyoudo('', 'Marlin'));
+var bill1, bill2, bill3;
+bill1 = parseInt(prompt('Bill form resturent 1: '));
+
+bill2 = parseInt(prompt('Bill form resturent 2: '));
+
+bill3 = parseInt(prompt('Bill form resturent 3: '));
+
+var tip1, tip2, tip3;
+
+tip1 = calculateTip(bill1);
+tip2 = calculateTip(bill2);
+tip3 = calculateTip(bill3);
+
+var allTip = [tip1, tip2, tip3];
+console.log(allTip);
+var totalBill1 = tip1 + bill1;
+var totalBill2 = tip2 + bill2;
+var totalBill3 = tip3 + bill3;
+var totalTip = [totalBill1, totalBill2, totalBill3];
+console.log(totalTip)
+*/
+/***************************************
+ * Objects and porperties
+ */
+
+/*
+//Object literal
+
+var jhon = {
+    firstName: 'Robin',
+    lastName: 'Maruf',
+    birthYear: 1997,
+    family: ['muzib','rashida','tina'],
+    job: 'developer',
+    isMarried: false,
+};
+console.log(jhon.firstName);
+
+console.log(jhon['lastName'])
+var x ='birthYear';
+console.log(jhon[x])
+
+jhon.job = 'designer';
+jhon['isMarried'] = true;
+console.log(jhon)
+
+
+//new Object syntax
+var jane = new Object();
+
+jane.firstName = 'Jane';
+jane.lastName = 'smith';
+jane.birthYear = 1997;
+
+console.log(jane);
+*/
+/***************************************
+ * Objects and method
+ */
+/*
+var jhon = {
+    firstName: 'Robin',
+    lastName: 'Maruf',
+    birthYear: 1997,
+    family: ['muzib','rashida','tina'],
+    job: 'developer',
+    isMarried: false,
+    calAge: function () {
+        return 2020 - this.birthYear;
+    }
+};
+
+console.log(jhon.calAge());
+*/
+
+/***************************************
+ * Coding Challenge -4
+ */
+/*
+var mark = {
+    firsName: 'Mark',
+    mass: 90,
+    height: 1.56,
+    bmiCal: function (){
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}
+
+mark.bmiCal();
+console.log(mark);
+*/
+/***************************************
+ * Loops and iteration
+ */
+/*
+var jhon = ["Maruf", "Robin", 1997, "Developer", false];
+
+for (var i = 0; i < jhon.length; i++) {
+  console.log(jhon[i]);
+}
+
+var i =0;
+
+while (i < jhon.length) {
+    console.log(jhon[i]);
+    i++;
+}
+*/
+
+/***************************************
+ * Coding Challenge -5
+ */
+/*
+var jhon = {
+  fullName: "jhon smith",
+  bill: [124, 48, 268, 180, 42],
+  calculateTip: function () {
+    this.tip = [];
+    this.finalvalues = [];
+
+    for (var index = 0; index < this.bill.length; index++) {
+      var bill = this.bill[index];
+      var precentage;
+      if (bill[index] < 50) {
+        precentage = 0.2;
+      } else if (bill >= 50 && bill < 200) {
+        precentage = 0.15;
+      } else {
+        precentage = 0.1;
+      }
+      this.tip[index] = bill * precentage;
+      this.finalvalues[index] = bill + bill * precentage;
+    }
+  },
+};
+
+var mark = {
+  fullName: "Mark Smith",
+  bill: [77, 375, 110, 45],
+  calculateTip: function () {
+    this.tip = [];
+    this.finalvalues = [];
+
+    for (var index = 0; index < this.bill.length; index++) {
+      var bill = this.bill[index];
+      var precentage;
+      if (bill[index] < 100) {
+        precentage = 0.2;
+      } else if (bill >= 100 && bill < 300) {
+        precentage = 0.1;
+      } else {
+        precentage = 0.25;
+      }
+      this.tip[index] = bill * precentage;
+      this.finalvalues[index] = bill + bill * precentage;
+    }
+  },
+};
+
+function calculateAvgTip(tips) {
+  var sum = 0;
+  for (var i = 0; i < tips.length; i++) {
+    sum = sum + tips[i];
+  }
+  return sum / tips.length;
+}
+
+jhon.calculateTip();
+mark.calculateTip();
+
+
+jhon.average = calculateAvgTip(jhon.tip);
+
+mark.average = calculateAvgTip(mark.tip);
+*/
