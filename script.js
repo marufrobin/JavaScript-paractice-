@@ -474,5 +474,94 @@ jhon.average = calculateAvgTip(jhon.tip);
 
 mark.average = calculateAvgTip(mark.tip);
 */
+/***************************************
+ * 'This' Keyword
+ */
+
+// console.log(this);
+/*
+calculateAge(1997);
+
+function calculateAge(year) {
+  console.log(2020 - year);
+  console.log(this);
+}
+
+var jhon = {
+  name: "Jhon",
+  yearOfBirth: 1990,
+  calculateAge: function () {
+    console.log(this);
+    console.log(2020 - this.yearOfBirth);
+  },
+};
+
+jhon.calculateAge();
+
+var mike = {
+  name: "Mike",
+  yearOfBirth: 1984,
+};
+
+mike.calculateAge = jhon.calculateAge;
+mike.calculateAge();
+*/
+
+/***
+ * 5. Funtion Constructor
+ */
+/*
+var jhon = {
+  name: "Jhon",
+  yearOfBirth: 1990,
+  job: "teacher",
+};
+
+var Person = function (name, yearOfBirth, job) {
+  this.name = name;
+  this.yearOfBirth = yearOfBirth;
+  this.job = job;
+};
+
+var robin = new Person("Robin", 1995, "Student");
+console.log(robin);
+
+Person.prototype.calculateAge = function () {
+  console.log(2020 - this.yearOfBirth);
+};
+
+robin.calculateAge();
+
+Person.prototype.firstName = 'Maruf';
 
 
+console.log(robin.firstName)
+
+*/
+
+
+/**
+ * object.create
+ */
+var personProto = {
+  calculateAge: function () {
+    console.log(2020 - this.yearOfBirthday);
+
+    
+  }
+}
+
+var jhon = Object.create(personProto);
+//one way to add object in the contructor
+jhon.name = 'Jhon';
+jhon.job = 'teacher';
+jhon.yearOfBirthday = 1995;
+
+//another way to add object in the constructor
+
+var jane = Object.create(personProto,
+  {
+    name: { value: 'Jane'},
+    yearOfBirthday: {value: 1991},
+    job: {value: 'student'}
+  })
