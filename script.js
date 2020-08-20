@@ -542,7 +542,7 @@ console.log(robin.firstName)
 
 /**
  * object.create
- */
+ 
 var personProto = {
   calculateAge: function () {
     console.log(2020 - this.yearOfBirthday);
@@ -565,3 +565,14 @@ var jane = Object.create(personProto,
     yearOfBirthday: {value: 1991},
     job: {value: 'student'}
   })
+*/
+  var robin = {
+    name:"Robin",
+    job : "student",
+    birthYear : 1995,
+    calculateAge : function () {
+      var age = 2020 - this.birthYear;
+      console.log(age);
+      
+    }
+  }
